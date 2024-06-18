@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
-import  GamesCard from"./GamesCard.jsx";
+import GamesData from "./GamesData.js";
+import GamesCard from "./GamesCard.jsx";
 let Home =()=> {
     return ( 
         <div className="h-full w-full">
@@ -18,7 +19,7 @@ let Home =()=> {
     </div>
   </div>
   <div className="navbar-center">
-    <a className="btn btn-ghost text-xl">Games Dungeon 🎮</a>
+    <a className="btn btn-ghost text-5xl margin-auto">Games Dungeon 🎮</a>
   </div>
   <div className="navbar-end">
     <button className="btn btn-ghost btn-circle">
@@ -32,9 +33,18 @@ let Home =()=> {
     </button>
   </div>
 </div>
-<div className=" flex justify-around">
-<GamesCard></GamesCard>
+<div className=" flex justify-around flex-wrap">
+
+{
+    GamesData.map((obj)=>
+  {
+    return(
+      <GamesCard obj = {obj}/>
+    )
+  })
+  }
 </div>
+
    </div>
     )}
 
