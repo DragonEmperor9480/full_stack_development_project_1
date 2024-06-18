@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import "./index.css";
-
+import Home from "./Home.jsx";
 
 function App(){
   return(
-
-    <div className="App"></div>
-  )
+    <Home></Home>
+    )
 }
 
 export default App
