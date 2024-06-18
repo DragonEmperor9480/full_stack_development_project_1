@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-
+import  GamesCard from"./GamesCard.jsx";
 let Home =()=> {
     return ( 
         <div className="h-full w-full">
@@ -32,7 +32,10 @@ let Home =()=> {
     </button>
   </div>
 </div>
-            </div>
+<div className=" flex justify-around">
+<GamesCard></GamesCard>
+</div>
+   </div>
     )}
 
     export default Home;
